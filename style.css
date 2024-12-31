@@ -1,0 +1,346 @@
+
+body {
+    background-color: #272727; 
+    font-family: Arial, Helvetica, sans-serif;                                    
+}
+
+p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  .logo {
+    height: 49px;
+    width: 65px;
+    font-weight: bold;
+  }
+ .dropdowns {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1px;
+ }
+ .dropdown {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+  .dropdowns .dropdown:hover {
+    background-color: #f0f0f0;
+  }
+
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: white;
+  color: skyblue;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%; /* Default to full width */
+  max-width: 200px; /* Max width for the button */
+}
+
+.btn:hover{
+  color: white;
+  background-color: skyblue;
+}
+
+
+.btnn:hover{
+
+  color: white;
+  background-color: skyblue;
+}
+.btnn {
+  display: flex;
+
+  align-items: center;
+
+  padding: 0px;
+  font-size: 16px;
+  border: none;
+  padding-right: 30px;
+  background-color: white;
+  color: skyblue;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px; /* Default to full width */
+}
+
+.btn-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; /* Space between logo and text */
+}
+
+/* For mobile view, 3 buttons per row */
+@media (max-width: 768px) {
+  .btn {
+    flex-basis: 30%; /* 3 buttons per row */
+  }
+}
+
+/* For desktop view, as many buttons as can fit */
+@media (min-width: 769px) {
+  .btn {
+    flex-basis: auto; /* The button will adapt to available space */
+  }
+}
+
+
+
+
+
+
+#first h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: bolder;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#first h2 {
+    color:darkgray;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.first-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.connect-button {
+    background-color: yellow;
+    color:black;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+.connect-button:hover {
+  background-color: black;
+  color: yellow;
+  
+}
+.sync-button {
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+.sync-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.first-row {
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-right: 0px;
+    padding-top: 30px;
+    display: flex;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    flex-direction: row;
+    gap: 30px;
+    background-color: white;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.6rem;
+    width: auto;
+    color: black;
+}
+
+.column img {
+    height: 40px;
+    width: 50px;
+    color: white;
+}
+
+.feature-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(233, 247, 253);
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: calc(50% - 40px);
+    background-color: white;
+    border-radius: 10px;
+    gap: 10px;
+    height: auto;
+    
+}
+
+
+@media(min-width:768px) {
+    .feature-box {
+        width: auto;
+        margin: 20px 10px;
+        background-color: white;
+        border-radius: 10px;
+    }
+}
+
+.rectify h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-size: 0.7rem;
+    padding-top: 35px;
+    padding-bottom: 0px;
+}
+
+.rectify p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Vertical layout on mobile */
+  background-color: #FEFEFE
+}
+
+.flex-item {
+  margin-bottom: 20px; /* Add spacing between items */
+}
+
+.flex-item img{
+  width: 100%;
+}
+
+/* Desktop view: horizontal layout */
+@media (min-width: 768px) {
+  .flex-container {
+    flex-direction: row; /* Horizontal layout on desktop */
+    justify-content: space-around; /* Distribute items evenly */
+  }
+  .flex-item {
+    margin-bottom: 0; /* Remove spacing between items */
+    margin-right: 20px; /* Add spacing between items */
+  }
+}
+
+
+
+    .subscribe-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 2px solid #333;
+      border-radius: 5px;
+      padding: 5px 10px;
+      width: 100%;
+      height: 50px;
+      margin: 20px auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .subscribe-container input[type="email"] {
+      border: none;
+      outline: none;
+      flex: 1;
+      padding: 0 10px;
+      font-size: 16px;
+    }
+
+    .subscribe-container button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      width: 100%;
+      height: 100%;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .subscribe-container button:hover {
+      background-color: #0056b3;
+    }
+    
+    
+  .flex-item h1{
+    font-size: 24px;
+    font-weight: bolder;
+  }
+  .flex-item h2 {
+    font-size: 0.9rem;
+  }
+  .flex-item h3 {
+    font-size: 0.9rem;
+    color: red;
+  }
+  
+  .feature-box i {
+    font-size: 1.5rem;
+    color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .feature-box p {
+    font-weight: bolder;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .feature-box a {
+    text-decoration: none;
+  }
+  .feature-box:hover {
+    background-color:grey;
+  }
